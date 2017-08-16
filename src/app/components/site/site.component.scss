@@ -1,0 +1,24 @@
+.website {
+  padding: 3rem 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: green;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.status {
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: right;
+  background: #DA1013;
+  margin: 5px 5px 0 0;
+  border-radius: 50%;
+  &.good-score {
+    background: #2ecc71;
+  }
+
+}

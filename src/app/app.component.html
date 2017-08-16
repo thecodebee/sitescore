@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="user-form">
+    <form>
+        <h1>Add your website</h1>
+        <div class="form-group row">
+          <label for="siteName" class="col-sm-2 col-form-label">Site Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="siteName" #siteName placeholder="Enter website name">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="siteURL" class="col-sm-2 col-form-label">Site URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="siteURL" #siteURL placeholder="Enter website URL">
+            </div>
+        </div>
+        <button class="btn btn-primary" (click)="addWebsite(siteName,siteURL)">Add website</button>
+    </form>
+  </div>
+  <div class="site-list">
+      <site *ngFor="let site of siteList"
+      [selectedSite]="site"></site>
+  </div>
+</div>
+
