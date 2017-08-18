@@ -3,17 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { SiteComponent } from './components/site/site.component';
-import { DomainPipe } from './pipes/domain.pipe';
+import { SitescoreDashboardModule } from './sitescore-dashboard/sitescore-dashboard.module';
+import { SitescoreDashboardComponent } from './sitescore-dashboard/components/containers/sitescore-dashboard/sitescore-dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SiteComponent,
-    DomainPipe
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SitescoreDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

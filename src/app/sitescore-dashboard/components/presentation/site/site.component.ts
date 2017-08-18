@@ -1,4 +1,4 @@
-import { Site } from './../../models/site';
+import { Site } from '../../../models/site';
 import { Component, Input } from '@angular/core';
 
 @Component({
